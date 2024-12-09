@@ -8,10 +8,12 @@
     
 }
 .inputdiv{
+    width: 100%;
     display: flex;
     align-items: center;
-    margin-top: 15px;
-    flex-wrap: wrap;
+    margin-top: 18px;
+    flex-wrap: wrap; 
+    justify-content: space-between;
     
 }
 
@@ -47,9 +49,39 @@ input{
     border-radius: 5px;
     padding-left: 10px;
     font-family: 'Courier New', Courier, monospace;
+    width: 100%;
 }
 
 ::placeholder{
     color: rgba(15, 19, 1, 0.87);
     font-family: 'Courier New', Courier, monospace;
+}
+
+.btnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.addBookBtn{
+    height: 35px;
+    width: fit-content;
+    padding: 5px 15px;
+    background-color: rgb(41, 39, 43);
+    outline: none;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+select{
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 30px;
+    border-radius: 3px;
+    padding-left: 10px;
 }

@@ -13,23 +13,39 @@
         <div  class="inputdiv">
             <div class="labeldiv"><label for="title">Book Title</label></div>
             
-            <input type="text" id="title" placeholder="Enter Book Name"/>
+            <input type="text" id="title" placeholder="Enter Book Name"value=''/>
         </div>
         <div class="inputdiv">
             <div class="labeldiv"><label for="author">Author</label></div>
-            <input type="text" id="author" placeholder="Enter Author Name"/>
+            <input type="text" id="author" placeholder="Enter Author Name" value=""/>
         </div>
         <div class="inputdiv">
             <div class="labeldiv"><label for="isbn">ISBN</label></div>
             <input type="text" id="isbn" placeholder="Enter ISBN "/>
         </div>
         <div class="inputdiv">
-            <div class="labeldiv"><label for="publicationDate">Publication Date</label></div>
-            <input type="text" id="publicationDate" placeholder="Enter Publication Date"/>
+            <div calass="labeldiv"><label for="publicationDate">Publication Date</label></div>
+            <input type="date" id="publicationDate" value=''placeholder="Enter Publication Date"/>
         </div> 
+        <div class="inputdiv">
+          <div calass="labeldiv"><label for="gener">Gener</label></div>
+          <!-- <input type="date" id="publicationDate" placeholder="Enter Publication Date"/> -->
+         <select name="gener" id="gener">
+          <option value="Science">Science</option>
+          <option value="Fiction">Fiction</option>
+          <option value="History">History</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Electronic">Electronic</option>
+         </select>
+        </div> 
+        <div class="btnContainer">
+          <button class="addBookBtn" >Add Book</button>
+        </div>
        
-        
       </form>
+
     </div>
+    <script src="bookManagment.js"></script>
   </body>
+
 </html>
