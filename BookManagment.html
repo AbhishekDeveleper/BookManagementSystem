@@ -7,25 +7,27 @@
     <title>Book Managment System</title>
   </head>
   <body>
+    
     <div class="container">
+      
       <form action="form-container" class="formcontainer">
         <div class="app-title">Book Managment System</div>
         <div  class="inputdiv">
             <div class="labeldiv"><label for="title">Book Title</label></div>
             
-            <input type="text" id="title" placeholder="Enter Book Name"value=''/>
+            <input type="text" id="title" placeholder="Enter Book Name" required/>
         </div>
         <div class="inputdiv">
             <div class="labeldiv"><label for="author">Author</label></div>
-            <input type="text" id="author" placeholder="Enter Author Name" value=""/>
+            <input type="text" id="author" placeholder="Enter Author Name"  required/>
         </div>
         <div class="inputdiv">
             <div class="labeldiv"><label for="isbn">ISBN</label></div>
-            <input type="text" id="isbn" placeholder="Enter ISBN "/>
+            <input type="text" id="isbn" placeholder="Enter ISBN " required/>
         </div>
         <div class="inputdiv">
             <div calass="labeldiv"><label for="publicationDate">Publication Date</label></div>
-            <input type="date" id="publicationDate" value=''placeholder="Enter Publication Date"/>
+            <input type="date" id="publicationDate" placeholder="Enter Publication Date" required=true/>
         </div> 
         <div class="inputdiv">
           <div calass="labeldiv"><label for="gener">Gener</label></div>
@@ -39,12 +41,28 @@
          </select>
         </div> 
         <div class="btnContainer">
-          <button class="addBookBtn" >Add Book</button>
+          <input
+          type="submit"
+          value="Add Book"
+          class="addBookBtn"/>
         </div>
        
       </form>
-
+      
+      </div>
     </div>
+    <div class="description">
+      <table id="tableid">
+        <tr>
+          <th>Book Title</th>
+          <th>Author</th>
+          <th>ISBN</th>
+          <th>Issued Date</th>
+          <th>Gener</th>
+          <th>Operation</th>
+        </tr>
+        
+      </table>
     <script src="bookManagment.js"></script>
   </body>
 
